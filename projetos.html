@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Esperança Viva - Projetos</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>ONG Esperança Viva</h1>
+
+            <!-- Ícone do Menu Hambúrguer sem erro de validação -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Abrir Menu">
+            <label for="menu-toggle" class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Menu de Navegação Integrado -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#projetos" class="dropdown-link">Projetos ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#projetos">Projeto Prato Cheio</a></li>
+                            <li><a href="#futuro-digital">Projeto Futuro Digital</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#cadastro">Seja Voluntário / Doador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="projetos" class="container-grid">
+
+        <section id="voluntariado">
+            <h2>Trabalho Voluntário</h2>
+            <p>Conheça as nossas frentes de atuação e saiba como pode contribuir com o seu tempo e talento:</p>
+
+            <article id="prato-cheio">
+                <h3>Projeto Prato Cheio</h3>
+                <img src="Imagem/prato-cheio.png"
+                    alt="um prato de comida com arroz, feijão, filé de frango grelhado, salada fresca e uma porção de macarrão">
+                <p>Atuação na arrecadação, organização e distribuição de refeições e cestas básicas para famílias em
+                    situação de vulnerabilidade.</p>
+                <ul>
+                    <li><strong>Perfis necessários:</strong> Auxiliar de cozinha, motorista e organizador de logística.
+                    </li>
+                    <li><strong>Disponibilidade:</strong> Aos sábados, das 08h às 12h.</li>
+                </ul>
+                <p><a href="#cadastro">Quero ser voluntário neste projeto</a></p>
+            </article>
+
+            <article id="futuro-digital">
+                <h3>Projeto Futuro Digital</h3>
+                <img src="Imagem/sala de aula.png" alt="sala de aula de computação moderna">
+                <p>Aulas gratuitas de informática básica e capacitação digital para jovens da comunidade.</p>
+                <ul>
+                    <li><strong>Perfis necessários:</strong> Instrutores de tecnologia e monitores de turma.</li>
+                    <li><strong>Disponibilidade:</strong> Terças e quintas, das 14h às 16h.</li>
+                </ul>
+                <p><a href="#cadastro">Quero ser voluntário neste projeto</a></p>
+            </article>
+        </section>
+
+        <section id="doacoes">
+            <h2>Campanhas de Doação</h2>
+            <p>A sua contribuição financeira permite a continuidade e expansão das nossas ações sociais.</p>
+
+            <article>
+                <h3>Doação Pontual</h3>
+                <p>Contribua com qualquer valor para apoiar a compra imediata de suprimentos e materiais educativos.</p>
+                <p><a href="#cadastro">Fazer uma doação pontual</a></p>
+            </article>
+
+            <article>
+                <h3>Doador Recorrente (Madrinha/Padrinho)</h3>
+                <p>Apoie mensalmente um dos nossos programas e ajude a garantir o impacto a longo prazo nas comunidades
+                    atendidas.</p>
+                <p><a href="#cadastro">Tornar-me doador recorrente</a></p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ONG Esperança Viva. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página - ONG Esperança Viva</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>ONG Esperança Viva</h1>
+
+            <!-- Ícone do Menu Hambúrguer sem erro de validação -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Abrir Menu">
+            <label for="menu-toggle" class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Menu de Navegação Integrado -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#projetos" class="dropdown-link">Projetos ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#projetos">Projeto Prato Cheio</a></li>
+                            <li><a href="#futuro-digital">Projeto Futuro Digital</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#cadastro">Seja Voluntário / Doador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="app-content" class="container-grid">
+        <!-- O conteúdo será injetado dinamicamente pelo main.js -->
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ONG Esperança Viva. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
