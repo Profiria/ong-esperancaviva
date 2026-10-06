@@ -510,58 +510,35 @@ article {
      background-color: var(--cor-destaque-hover);
 }
 
-/* Suporte Completo a Modo Escuro com Alto Contraste */
+/* Correção Definitiva do Modo Escuro na SPA e Formulários */
 @media (prefers-color-scheme: dark) {
-  body {
+  html, body, #main-content, #app, main {
     background-color: #121212 !important;
     color: #f8f9fa !important;
   }
 
-  /* Força fundo escuro nos cartões e blocos do Bootstrap */
-  .card, 
-  .card-body, 
-  .card-header, 
-  .card-footer, 
-  .bg-white, 
-  .bg-light,
-  main,
-  section,
-  article,
-  .shadow,
-  .shadow-sm,
-  .shadow-lg {
+  /* Cartões, containers e fieldsets do formulário */
+  .card, .card-body, .card-header, .card-footer, 
+  .bg-white, .bg-light, fieldset, form, .form-section {
     background-color: #1e1e1e !important;
     color: #f8f9fa !important;
     border-color: #333333 !important;
   }
 
-  /* Força a cor clara em todos os textos internos */
-  *, 
-  h1, h2, h3, h4, h5, h6, 
-  p, li, span, label, td, th, 
-  .text-dark, .text-muted, .text-body, .text-secondary {
+  /* Rótulos, legendas e textos do formulário */
+  label, legend, .form-label, p, h1, h2, h3, h4, h5, h6, span, strong {
     color: #f8f9fa !important;
   }
 
-  /* Links e realces em tom azul visível */
-  a, .nav-link {
-    color: #66b2ff !important;
-  }
-}
-
-/* Ajuste de formulários e inputs no modo escuro */
-  input, 
-  textarea, 
-  select, 
-  .form-control, 
-  .form-select {
+  /* Caixas de entrada (inputs), seletores e textareas */
+  input, textarea, select, .form-control, .form-select {
     background-color: #2b2b2b !important;
     color: #ffffff !important;
-    border: 1px solid #444444 !important;
+    border: 1px solid #555555 !important;
   }
 
-  /* Cor do texto de dica (placeholder) */
-  input::placeholder, 
-  textarea::placeholder {
-    color: #aaa !important;
+  /* Cor do placeholder (texto de exemplo dentro do campo) */
+  input::placeholder, textarea::placeholder {
+    color: #b0b0b0 !important;
   }
+}
