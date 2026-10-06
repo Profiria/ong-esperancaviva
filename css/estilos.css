@@ -509,3 +509,15 @@ article {
 .detalhes-curso a.btn:hover {
      background-color: var(--cor-destaque-hover);
 }
+
+/* Suporte a Alto Contraste e Modo Escuro Automático */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212 !important;
+    color: #f8f9fa !important;
+  }
+  .card, header, footer {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+  }
+}
