@@ -548,3 +548,20 @@ article {
     color: #66b2ff !important;
   }
 }
+
+/* Ajuste de formulários e inputs no modo escuro */
+  input, 
+  textarea, 
+  select, 
+  .form-control, 
+  .form-select {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    border: 1px solid #444444 !important;
+  }
+
+  /* Cor do texto de dica (placeholder) */
+  input::placeholder, 
+  textarea::placeholder {
+    color: #aaa !important;
+  }
